@@ -14,11 +14,7 @@ import {
 } from "./FormElements";
 
 export const FormDymanic = ({ properties, title }) => {
-  // console.log(properties);
-
-  // const [formData, setFormData] = useState({});
-
-  const { formData, setFormData, tags } = useContext(PokemonContext);
+  const { formData, setFormData } = useContext(PokemonContext);
   const [validationSchema, setValidationSchema] = useState({});
 
   useEffect(() => {
